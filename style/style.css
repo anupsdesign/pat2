@@ -1,0 +1,191 @@
+body{background-color: #000;}
+.body-wrap{
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px;
+    background-color: #000;
+}
+.logo{
+    position: fixed;
+    font-size: 2em;
+    padding-left: 30px;
+    color: red;
+    width: 100%;
+    z-index: 1000;
+}
+.container-wrap{
+/*    background-color: gainsboro;*/
+    width: 100%;
+    padding: 20px;
+    
+}
+button{
+    color: gainsboro;
+    font-size: 90px;
+    transition: .3s;
+    border: none;
+    background-color: transparent;
+    cursor: pointer !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 1.1;
+    outline: none;
+}
+button:hover{
+    transition: .3s;
+    transform: translateY(-10px);
+    outline: none;
+    cursor: pointer !important;
+}
+.white-space{
+    height: 100px;
+}
+nav{
+    padding-bottom: 90px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+    padding-left: 5px;
+}
+a{
+    text-decoration: underline;
+    color: darkgrey;
+    display: block;
+}
+h5{
+    color: grey;
+}
+.grey-color{
+    color: darkgrey;
+}
+h3{color: #fff;}
+
+button.about.slide-out-bottom{animation-delay: .6s;}
+button.services.slide-out-bottom{animation-delay: .5s;}
+button.careers.slide-out-bottom{animation-delay: .4s;}
+button.contact.slide-out-bottom{animation-delay: .3s;}
+
+.about-content h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: lighter;
+}
+
+/*slide up animation ends*/
+@media only screen and (min-height:1000px){
+    .body-wrap{height: 100vh;}
+    nav{
+        padding-top: 0;
+    }
+    .center-lg-screen{
+        position: relative;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (max-width:1400px){
+    button{
+        font-size:9vw;
+    }
+}
+
+/*slide down animation*/
+.slide-out-bottom {
+    -webkit-animation: slide-out-bottom 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-bottom 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+/*slide down animation ends*/
+
+/*slide up animation*/
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**/
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**/
+
